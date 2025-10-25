@@ -10,6 +10,16 @@
         "type": "Point",
         "coordinates": [8.58350894941472, 47.46320613878702]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten zum wilden Mann"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.579479897218178, 47.453600919189604]
+      }
     }
   ]
 }
