@@ -1,1 +1,15 @@
-    
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Freienberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.58350894941472, 47.46320613878702]
+      }
+    }
+  ]
+}
