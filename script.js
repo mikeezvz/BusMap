@@ -5,19 +5,36 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors",
 }).addTo(map);
 
-Promise.all([
-  fetch("data/lines.geojson").then((r) => r.json()),
-  fetch("data/stops.geojson").then((r) => r.json()),
-]).then(([lines, stops]) => {
-  console.log(stops);
-  L.geoJSON(lines, {
-    style: { color: "blue", weight: 3 },
-  }).addTo(map);
+fetch("data/lines.json")
+  .then((res) => res.json())
+  .then((lines) => {
+    lines.forEach((line) => {
+      fetch("/route", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ coordinates: line.coordinates }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            style: { color: line.color, weight: 4 },
+          })
+            .bindPopup(line.name)
+            .addTo(map);
+        })
+        .catch((err) => console.error(`Fehler bei ${line.name}:`, err));
+    });
+  })
+  .catch((err) => console.error("Fehler beim Laden der Buslinien:", err));
 
-  L.geoJSON(stops, {
-    pointToLayer: (feature, latlng) => L.marker(latlng),
-    onEachFeature: (feature, layer) => {
-      layer.bindPopup(feature.properties.name || "Haltstelle");
-    },
-  }).addTo(map);
-});
+fetch("data/stops.geojson")
+  .then((res) => res.json())
+  .then((stops) => {
+    L.geoJSON(stops, {
+      pointToLayer: (feature, latlng) => L.marker(latlng),
+      onEachFeature: (feature, layer) => {
+        layer.bindPopup(feature.properties.name || "Haltestelle");
+      },
+    }).addTo(map);
+  })
+  .catch((err) => console.error("Fehler beim Laden der Haltestellen:", err));
