@@ -20,6 +20,126 @@
         "type": "Point",
         "coordinates": [8.579479897218178, 47.453600919189604]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zürich Flughafen Fracht"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.571933625822703, 47.45238252533571]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zürich Flughafen OPC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.56605961462793, 47.45249153381336]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zürich Flughafen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.563700614799117, 47.450357488569466]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Chanzler"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.58175433425639, 47.46720767214771]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Weinbergstrasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.580538608576289, 47.46624799485195]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Hohrainli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.581777744807283, 47.459756447160395]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Kaserne Ost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.580278480142177, 47.457415588230496]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Kirchgasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.584903231114447, 47.45272992697381]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Bahnhof"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.583675340379585, 47.44863217284898]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Neubrunnenstrasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.57889944320148, 47.444809496708]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Lägernstrasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.576411982171027, 47.44510727291888]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zürich Flughafen Werft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.571641821095279, 47.44503240513221]
+      }
     }
   ]
 }
