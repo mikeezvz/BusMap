@@ -5,6 +5,10 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors",
 }).addTo(map);
 
+map.attributionControl.addAttribution(
+  "Buslinienkarte – erstellt von Mike Zogheib"
+);
+
 fetch("data/lines.json")
   .then((res) => res.json())
   .then((lines) => {
