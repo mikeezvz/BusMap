@@ -10,14 +10,17 @@ const ORS_API_KEY = process.env.ORS_API_KEY;
 
 app.post("/route", async (req, res) => {
   try {
-    const response = await fetch("https://api.openrouteservice.org/v2/directions/driving-car/geojson", {
-      method: "POST",
-      headers: {
-        "Authorization": ORS_API_KEY,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ coordinates: req.body.coordinates }),
-    });
+    const response = await fetch(
+      "https://api.openrouteservice.org/v2/directions/driving-car/geojson",
+      {
+        method: "POST",
+        headers: {
+          Authorization: ORS_API_KEY,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ coordinates: req.body.coordinates }),
+      }
+    );
 
     const data = await response.json();
     res.json(data);
@@ -26,4 +29,6 @@ app.post("/route", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Server läuft auf http://localhost:${PORT}`));
+app.listen(PORT, () =>
+  console.log(`Server läuft auf http://localhost:${PORT}`)
+);

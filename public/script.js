@@ -21,10 +21,13 @@ fetch("data/lines.json")
         .then((res) => res.json())
         .then((data) => {
           L.geoJSON(data, {
-            style: { color: line.color, weight: 4 },
-          })
-            .bindPopup(line.name)
-            .addTo(map);
+            style: { color: line.color, weight: 3 },
+            onEachFeature: (_, layer) => {
+              layer.bindPopup(line.name);
+              layer.on("mouseover", () => layer.setStyle({ weight: 6 }));
+              layer.on("mouseout", () => layer.setStyle({ weight: 3 }));
+            },
+          }).addTo(map);
         })
         .catch((err) => console.error(`Fehler bei ${line.name}:`, err));
     });
