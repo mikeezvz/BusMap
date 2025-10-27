@@ -134,11 +134,91 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Zürich Flughafen Werft"
+        "name": "Zürich Flughafen Werft B"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [8.571641821095279, 47.44503240513221]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Härdlen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.590088412390926, 47.45568310044477]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Geissbergstrasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.593020075643063, 47.453816485629275]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Säntisstrasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 8.591096188127592, 47.45159807362115]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Lindenstrasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 8.58861237208521, 47.45189821804695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Bramen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.578191044461311, 47.44378262580675]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Waldeggweg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.575202886029311, 47.440890148668956]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloten Balsberg Hardacher"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.57164632854556, 47.44038080527154]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zürich Flughafen Werft A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.570928916787278, 47.44402188398663]
       }
     }
   ]
